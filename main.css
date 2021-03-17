@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif,Tahoma;
+    background-color: rgb(88, 184, 240);
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin:90px 50%;  
+    overflow: hidden;
+}
+.container > div{
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+     background-color: rgb(0, 28, 59) !important; 
+}
+.container > div:hover{
+    width: 125px;
+    height: 55px;
+    background-color: rgb(9, 255, 194) !important;
+    transition: all .3s;
+}
+.front{
+    left: 142px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 41px;
+    transform: rotateZ(90deg);   
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.left{
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    transform: rotateZ(180deg);   
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.right{
+    position: absolute;
+    top: 130px;
+    left:0px;
+    transform: rotateZ(360deg);  
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.back{
+    left: 142px;
+    top: 250px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transform: rotateZ(270deg);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.time{
+    position: fixed;
+    width: 200px;
+    height: 25px;
+    border: 2px solid rgb(43, 41, 41);
+    border-radius: 10px;
+    top: 100px;
+    left: 80px;
+    outline: none;
+    padding: 10px;
+}
+.contain-data{
+    position: fixed;
+    top: 400px;
+    width: 300px;
+    height: 100px;
+    left: 60px;   
+}
+.output{
+width: 400px;
+height: 80px;
+outline: none;
+border: 2px solid black;
+border-radius: 10px;
+}
+label{
+top: -5px;
+font-weight: bold;
+position: absolute;
+left: 5px;
+}
